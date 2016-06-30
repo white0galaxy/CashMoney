@@ -2,12 +2,9 @@
 <script>
 var canv = document.getElementById("ctx");
 var ctx = canv.getContext("2d");
-x = 250;
-ctx.fillRect(x,250,50,50);
-change();
-ctx.fillRect(x,250,50,50);
+setInterval(change,30);
 
 function change
-x = 500;
-
+x++;
+ctx.fillRect(x,250,50,50);
 </script>
