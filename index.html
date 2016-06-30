@@ -8,12 +8,11 @@ var mouvement = 1;
 setInterval(change,20);
 
 function change(){
-  ctx.clearRect(0,0,500,700);
-  x = x + mouvement;;
+  ctx.clearRect(0,0,700,500);
+  x = x + mouvement;
   ctx.fillRect(x,250,50,50);
   if(x == 650){
-    mouvement = - 1;
-    
+    mouvement = -1;
   }
 }
 </script>
